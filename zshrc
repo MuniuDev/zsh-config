@@ -116,7 +116,7 @@ if [ -f ~/.zloader ]; then
 fi
 
 # Do not enable a complex prompt on a basic terminal.
-if ! [ $TERM = "vt100" -o $TERM = "dumb" ]; then
+if ! [ $TERM = "vt100" -o $TERM = "dumb" -o $TERM = "linux" ]; then
     . ~/.zprompt
 fi
 
